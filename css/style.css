@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Top header start here */
+
+.top_header{
+    background: #EFEFEF;
+    padding: 15px 0px;
+}
+.top_header p{
+    color: #7f7f7f;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+}
+.top_header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.top_header ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #7f7f7f;
+    font-weight: 500;
+    font-size: 15px;
+}
+/* Top header end here */
+/* header part start here */
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #161616;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    margin-left: 15px;
+}
+
+
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #F78F2F;
+    
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #F78F2F;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 45%;
+    background: #F78F2F;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 45%;
+    background: #F78F2F;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #F78F2F;
+}
+.Large_btn_join{
+    display: none;
+}
+
+.btn_join , .Large_btn_join , .join_us{
+    background: #F78F2F;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 30px;
+    margin-left: 10px;
+
+}
+.nav-control {
+    display: flex;
+    align-items: center;
+}
+.btn_join:hover , .Large_btn_join:hover , .join_us:hover{
+    background-color: #d4761e;
+    color: #fff;
+}
+
+
+
+
+/* banner part start here */
+
+
+.banner{
+    background-image: url(../images/Background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.hg{
+    min-height: 80vh;
+    text-align: center;
+    align-items: center;
+
+}
+.banner h1{
+
+    color: #fff;
+}
+.count{
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin: 30px 0px;
+}
+.count_item{
+
+    
+}
+.count_item h5{
+
+    color: #fff;
+}
+.count_item h6{
+
+    color: #fff;
+}
+.join_us{
+    padding: 0;
+    padding: 7px 20px;
+    font-size: 15px;
+    margin-right: 5px;
+
+}
+.contact_us{
+    padding: 0;
+    padding: 7px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-left: 5px;
+
+}
+.contact_us:hover{
+    background-color:#F78F2F;
+    color: #fff;
+    border: 1px solid #F78F2F;
+}
+.join_us:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+/* Instraction part start here  */
+
+.instraction{
+
+}
+.instraction_item{
+
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 15px;
+    transition: .4s all ease-in-out;
+    position: relative;
+    z-index: 0;
+    border: 1px solid #979797;
+    border-radius: 3px;
+ 
+}
+
+.instraction_item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cca206+0,e06202+100&0.85+0,0.85+100 */
+background: -moz-linear-gradient(top,  rgba(204,162,6,0.85) 0%, rgba(224,98,2,0.85) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(204,162,6,0.85) 0%,rgba(224,98,2,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(204,162,6,0.85) 0%,rgba(224,98,2,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9cca206', endColorstr='#d9e06202',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+
+.instraction_item:hover{
+    background-image: url(../images/bitcoin.png);
+    background-position: center;
+    cursor: pointer;
+    border: 1px solid #F78F2F;
+  
+
+}
+.instraction_item:hover::before{
+    width: 100%;
+    height: 100%;
+}
+.instraction_item h3{
+    padding: 30px 0px;
+}
+.instraction_item p{
+
+}
+.instraction_item i{
+    font-size: 40px;
+
+}
+.instraction_item:hover i{
+    color: #fff;
+
+}
+.instraction_item:hover h3{
+    color: #fff;
+   
+
+}
+.instraction_item:hover p{
+    color: #fff;
+
+}
+.service{
+
+}
+.heading{
+
+}
+.heading h2{
+
+}
+.heading p{
+
+}
+.heading span{
+    display: block;
+    height: 2px;
+    width: 50px;
+    background: #F78F2F;
+    margin: auto;
+
+}
+.service_item{
+    
+}
+.service_item h3{
+    color: #2b2b2b;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.service_item p{
+    color: #424242;
+    font-size: 14px;
+
+}
+.item-img{
+    width: 18%;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+
+.view_more{
+    color: #000;
+    border-color: #000;
+    margin-top: 30px;
+}
